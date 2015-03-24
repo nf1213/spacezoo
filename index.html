@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Space Zoo</title>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=.7, maximum-scale=1, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <style>
+  body {
+    background: #333333;
+  }
+
+  #canvas {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: #FFFFFF;
+    border: thin inset #111111;
+    background: url('volcanonebula.jpg') no-repeat;
+  }
+  .reset {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    text-align: center;
+    padding: 5px;
+  }
+  .txt {
+    color: white;
+    font-size: 32px;
+    text-decoration: none;
+  }
+
+  #middle {
+    margin-right: 25%;
+    margin-left: 25%;
+    font-size: 20px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .title {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  </style>
+</head>
+
+<body>
+  <canvas id="canvas" width="500" height="590">
+    Canvas not supported
+  </canvas>
+  <a class="txt" href="index.html"><div class="reset">Reset</div></a>
+  <h2 class="title">Oh no! The aliens are loose!</h2>
+  <p id="middle">
+    You are Captain Capturall of the USS Space Canoe. While transporting alien
+    creatures to a new zoo on earth, your ship experienced a hull breach. Not to
+    worry, you simply need to maneuver the creatures into groups of three in order
+    to capture them. You must hurry! More creatures will escape with every move
+    you make!
+  </p>
+
+  <script src="public/js/key_codes.js"></script>
+  <script src="public/js/candy48/grid.js"></script>
+  <script src="public/js/candy48/shape.js"></script>
+  <script src="public/js/candy48/candy48.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57974785-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
